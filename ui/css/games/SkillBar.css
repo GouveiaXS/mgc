@@ -1,0 +1,55 @@
+/*
+    This file is part of MGC and is licensed under the MIT License.
+    See the LICENSE file in the root directory for full terms.
+
+    © 2025 Case @ Playing In Traffic
+
+    Support honest development - retain this credit. Don't be that guy...
+*/
+
+.skill_bar_container {
+    position: relative;
+    top: 30%;
+    width: 25%;
+    height: 3%;
+    background: radial-gradient(circle, var(--background_main) 40%, var(--background_panel) 100%);
+    border-radius: var(--border_radius_outer);
+    border: var(--border_accent);
+    box-shadow: var(--shadow_large);
+    overflow: hidden;
+    transform: translateX(1%);
+}
+
+.skill_bar_target_area {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-right: var(--border_light);
+    border-left: var(--border_light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill_bar_icon {
+    position: absolute;
+    top: 50%;
+    height: 100%;
+    width: 5%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill_bar_verticle {
+    transform: translateY(-50%);
+}
+
+.skill_bar_perfect_area {
+    height: 100%;
+    background-color: var(--accent3);
+}

@@ -1,0 +1,53 @@
+/*
+    This file is part of MGC and is licensed under the MIT License.
+    See the LICENSE file in the root directory for full terms.
+
+    © 2025 Case @ Playing In Traffic
+
+    Support honest development - retain this credit. Don't be that guy...
+*/
+
+.current_key_display {
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text_primary);
+    border-radius: var(--border_radius_outer);
+    background: radial-gradient(circle, var(--background_main) 40%, var(--background_panel) 100%);
+    height: 5vh;
+    width: 2.75vw;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border_accent);
+    box-shadow: var(--shadow_medium);
+    font-family: var(--text_font);
+}
+
+.button_mash_container {
+    position: relative;
+    width: 30vh;
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button_mash_canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.button_mash_info {
+    position: absolute;
+    top: 29.5%;
+    font-size: 1.5rem;
+    font-family: var(--text_font);
+    color: var(--text_primary);
+    font-weight: bold;
+    user-select: none;
+    text-shadow: var(--text_shadow_hard)
+}

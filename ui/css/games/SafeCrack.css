@@ -1,0 +1,83 @@
+/*
+    This file is part of MGC and is licensed under the MIT License.
+    See the LICENSE file in the root directory for full terms.
+
+    © 2025 Case @ Playing In Traffic
+
+    Support honest development - retain this credit. Don't be that guy...
+*/
+
+.sc_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sc_lock_container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sc_canvas {
+    position: absolute;
+}
+
+.sc_dial {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--background_main) 40%, var(--background_panel) 100%);
+    position: absolute;
+    border: var(--border_accent);
+    box-shadow: var(--shadow_large);
+}
+
+.sc_dial_center {
+    width: 50%;
+    height: 50%;
+    background: rgba(10, 10, 10, 1);
+    border-radius: 50%;
+    position: absolute;
+    border: var(--border_accent);
+    box-shadow: var(--inset_shadow_large);
+}
+
+.sc_numbers {
+    position: absolute;
+    width: 3.5vh;
+    padding: 0.5vh;
+    top: 44.5%;
+    left: 40%;
+    color: var(--accent);
+    font-weight: bold;
+    text-align: center;
+    font-family: "League Spartan"
+}
+
+.lock_icons_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.lock_icons {
+    display: flex;
+    letter-spacing: 5px;
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.lock_icons.normal {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.lock_icons.highlighted {
+    color: var(--accent);
+}

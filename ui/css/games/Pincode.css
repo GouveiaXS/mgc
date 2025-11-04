@@ -1,0 +1,108 @@
+/*
+    This file is part of MGC and is licensed under the MIT License.
+    See the LICENSE file in the root directory for full terms.
+
+    © 2025 Case @ Playing In Traffic
+
+    Support honest development - retain this credit. Don't be that guy...
+*/
+
+.minigame_container.pincode {
+    width: 30vh;
+    height: 48vh;
+}
+
+.pc_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pincode_display {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: var(--background_overlay);
+    border: var(--border_dashed);
+    padding: 1vh;
+}
+
+.pincode_digits {
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+.attempts_remaining {
+    font-size: 1.5rem;
+    opacity: 1;
+    margin-bottom: 1.5vh;
+    margin-top: -2vh;
+}
+
+.pincode_keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.keypad_button {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text_primary);
+    border-radius: var(--border_radius_inner);
+    background: radial-gradient(circle, var(--background_main) 40%, var(--background_panel) 100%);
+    height: 6vh;
+    width: 6vh;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border_accent);
+    box-shadow: var(--shadow_medium);
+    font-family: var(--text_font);
+}
+
+.keypad_button:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.keypad_button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.pincode_submit {
+    margin-top: 2vh;
+}
+
+.pincode_submit_button {
+    padding: 0.5vh;
+    font-size: 1.5rem;
+    background-color: var(--accent);
+    color: white;
+    border: var(--border_dark);
+    border-radius: var(--border_radius_inner);
+    box-shadow: var(--inset_shadow_small);
+    cursor: pointer;
+    font-family: "VT323", monospace;
+    text-transform: uppercase;
+    width: 15vh;
+    opacity: 0.9;
+}
+
+.pincode_submit_button:hover {
+    opacity: 1.0;
+}
+
+.pincode_result_message {
+    font-size: 2rem;
+    color: white;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.pincode_digits span {
+    font-size: 2rem;
+    margin: 0 3px;
+}

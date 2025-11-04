@@ -1,0 +1,34 @@
+{
+    "default_theme": "default",
+    "themes": [ "default" ],
+    "css": [
+        "/ui/css/fonts.css",
+        "/ui/css/style.css",
+
+        "/ui/css/games/SafeCrack.css",
+        "/ui/css/games/KeyDrop.css",
+        "/ui/css/games/SkillCircle.css",
+        "/ui/css/games/SkillBar.css",
+        "/ui/css/games/WireCut.css",
+        "/ui/css/games/ButtonMash.css",
+        "/ui/css/games/Anagram.css",
+        "/ui/css/games/ChipHack.css",
+        "/ui/css/games/Hangman.css",
+        "/ui/css/games/Pincode.css",
+        "/ui/css/games/CircuitTrace.css",
+        "/ui/css/games/PatternLock.css",
+        "/ui/css/games/TileShift.css",
+        "/ui/css/games/BitFlip.css",
+        "/ui/css/games/FrequencyJam.css",
+        "/ui/css/games/PulseSync.css",
+        "/ui/css/games/PacketSnatch.css",
+        "/ui/css/games/WhackFlash.css",
+        "/ui/css/games/SignalWave.css",
+        "/ui/css/games/CodeDrop.css",
+
+        "/ui/css/themes/default.css"
+    ],
+    "js": [
+        "/ui/js/app.js"
+    ]
+}

@@ -1,0 +1,100 @@
+/*
+    This file is part of MGC and is licensed under the MIT License.
+    See the LICENSE file in the root directory for full terms.
+
+    © 2025 Case @ Playing In Traffic
+
+    Support honest development - retain this credit. Don't be that guy...
+*/
+
+.anagram_loading {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.anagram_loading_icons span {
+    margin: 12px;
+    font-size: 4rem;
+    opacity: 0.5;
+    transition: color 0.3s, opacity 0.3s;
+    color: var(--text_secondary);
+}
+.anagram_loading_icons span.line_complete i {
+    opacity: 1;
+    color: var(--text_primary);
+}
+.anagram_loading_text {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: var(--text_secondary);
+    font-family: "VT323", monospace;
+}
+
+.anagram_game {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.anagram_body {
+    flex: 1;
+    padding: 1vh;
+    overflow-y: auto;
+}
+
+.anagram_footer {
+    padding: 1vh;
+    border-top: var(--border_dashed);
+    background-color: var(--background_overlay);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.anagram_input {
+    padding: 0.5vh;
+    font-size: 1.5rem;
+    border: var(--border_dark);
+    border-radius: var(--border_radius_inner);
+    box-shadow: var(--inset_shadow_small);
+    font-family: "VT323", monospace;
+}
+
+.anagram_submit {
+    padding: 0.5vh;
+    font-size: 1.5rem;
+    background-color: var(--accent);
+    color: white;
+    border: var(--border_dark);
+    border-radius: var(--border_radius_inner);
+    box-shadow: var(--inset_shadow_small);
+    cursor: pointer;
+    font-family: "VT323", monospace;
+    text-transform: uppercase;
+}
+
+.anagram_password {
+    margin-top: 5px;
+    font-size: 1.5rem;
+    border: var(--border_dashed);
+    padding: 0.5vh;
+    text-align: center;
+     text-transform: uppercase;
+}
+
+.guess.correct {
+    color: green;
+}
+
+.guess.wrong {
+    color: red;
+}
+
+.anagram_result {
+    font-size: 4rem;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+}
