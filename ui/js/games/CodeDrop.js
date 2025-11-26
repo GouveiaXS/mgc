@@ -168,7 +168,7 @@ export default class CodeDrop {
         setTimeout(() => {
             $("#main_container").empty();
             try {
-                $.post(`https://${GetParentResourceName()}/minigame_result`, JSON.stringify({ game: "anagram", success }));
+                $.post(`https://${GetParentResourceName()}/minigame_result`, JSON.stringify({ game: "code_drop", success }));
             } catch (err) {
                 console.warn("Could not send code_drop_end callback:", err);
             }

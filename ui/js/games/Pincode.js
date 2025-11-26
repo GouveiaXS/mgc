@@ -162,7 +162,7 @@ export default class Pincode {
 
         setTimeout(() => {
             $('#main_container').empty();
-            $.post(`https://${GetParentResourceName()}/pincode_end`, JSON.stringify({ success }));
+            $.post(`https://${GetParentResourceName()}/minigame_result`, JSON.stringify({ game: "pin_code", success }));
         }, 2000);
     }
 
