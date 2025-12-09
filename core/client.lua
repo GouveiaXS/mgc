@@ -12,6 +12,7 @@
 
 local is_busy = false
 local current_cb = nil
+local winCon = nil
 
 --- @section Functions
 
@@ -30,6 +31,10 @@ local function start_game(data, cb)
         game = data.game,
         data = data.data or {}
     })
+
+    while is_busy do Wait(0) end
+    return winCon
+
 end
 
 exports("start_game", start_game)
@@ -43,13 +48,16 @@ RegisterNUICallback("minigame_result", function(data, cb)
         SetNuiFocus(false, false)
     end
 
-    is_busy = false
-
     if current_cb then
+        winCon = data.success
         current_cb(data)
         current_cb = nil
     end
-
+        
+    is_busy = false
+    Wait(50)
+    winCon = nil
+        
     cb("ok")
 end)
 
@@ -75,4 +83,5 @@ RegisterCommand("test_minigame", function(_, args)
             print(("Game '%s' failed."):format(result.game))
         end
     end)
+
 end)
