@@ -56,6 +56,13 @@ exports.mgc:start_game({
     end
 end)
 ```
+or 
+```lua
+local success = exports.mgc:start_game({
+    game = 'signal_wave', -- or any of the other 20 games
+    data = { difficulty = 3 } -- refer to docs for per game settings
+}, function(result) end)
+```
 
 It's that simple.
 All games fire back the same payload. 
